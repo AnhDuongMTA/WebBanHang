@@ -1,0 +1,14 @@
+﻿@using WebBanHangLaptop.Models;
+@model List<LoaiLaptop>
+<ul class="sub-menu list-unstyled sub-menu2">
+    <div class="navg-drop-main">
+        <div class="nav-drop nav-top-brand">
+            @{
+                foreach (var item in Model)
+                {
+                    <li><a href="products.html">Laptop @item.TenLoai</a></li>
+                }
+            }
+        </div>
+    </div>
+</ul>
